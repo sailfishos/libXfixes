@@ -1,0 +1,22 @@
+Name: libXfixes
+Summary: X.Org X11 libXfixes runtime library
+Version: 5.0
+Release: 1
+Group: System/Libraries
+Description: Xorg X11 libXfixes runtime library
+License: MIT
+URL: http://www.x.org/
+Sources:
+    - http://xorg.freedesktop.org/releases/individual/lib/%{name}-%{version}.tar.bz2
+
+PkgConfigBR:
+    - x11
+    - xproto
+    - fixesproto
+    - xextproto
+SubPackages:
+    - Name: devel
+      Summary: Development components for the libXfixes library
+      Description: Xorg X11 libXfixes development package
+      Group: Development/Libraries
+
